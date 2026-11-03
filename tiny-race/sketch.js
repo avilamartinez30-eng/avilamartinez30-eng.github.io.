@@ -1,4 +1,4 @@
-let racerXs = [10, 10, 10, 10];
+let racerXs = [20, 10, 10, 10];
 let startY = 50;
 let yStep = 40;
 let finishX = 560;
@@ -17,7 +17,8 @@ function draw() {
       racerXs[i] += random(1, 7);
 
     }
-    fill(racerXs[i],155,700)
-    circle(racerXs[i], y, 24);
+    fill(racerXs,255,0,255)
+    circle(racerXs[i], y, 10);
+   
     }
   }
