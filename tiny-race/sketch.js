@@ -1,7 +1,8 @@
-let racerXs = [30, 50, 30];
+let racerXs = [10, 10, 10, 10];
 let startY = 50;
-let yStep = 60;
+let yStep = 40;
 let finishX = 560;
+
 
 function setup() {
   createCanvas(600, startY + yStep * racerXs.length);
@@ -13,8 +14,10 @@ function draw() {
   for (let i = 0; i < racerXs.length; i++) {
     let y = startY + yStep * i;
     if (racerXs[i] < finishX) {
-      racerXs[i] += random(1, 3);
+      racerXs[i] += random(1, 7);
+
     }
+    fill(racerXs[i],155,700)
     circle(racerXs[i], y, 24);
+    }
   }
-}
